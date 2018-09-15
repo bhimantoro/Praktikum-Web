@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Studi Kasus: Validasi Input HTMl5</title>
+	<style type="text/css">
+		input {
+			width: 100%;
+			padding: 5px;
+			margin: 0px;
+			box-sizing: border-box;
+		}
+		td {
+
+		}
+	</style>
+</head>
+<body>
+	<form action="" method="POST">
+		<table cellspacing="0" border="1" cellpadding="">
+			<tr>
+				<td>Nama</td>
+				<td>:</td>
+				<td><input type="text" name="nama" placeholder="Isikan Nama Anda" required></td>
+			</tr>
+			<tr>
+				<td>Usia</td>
+				<td>:</td>
+				<td><input type="number" name="usia" required></td>
+				<td colspan="3">(Usia min 17-30)</td>
+			</tr>
+			<tr>
+				<td>Email</td>
+				<td>:</td>
+				<td><input type="email" name="email" required placeholder="nama_email@host.com"></td>
+			</tr>
+			<tr>
+				<td>Web</td>
+				<td>:</td>
+				<td colspan="5"><input type="url" name="web" placeholder="http://" required></td>
+			</tr>
+			<tr>
+				<td>Password</td>
+				<td>:</td>
+				<td colspan="3"><input type="password" name="password" placeholder="Semua karakter, min 8"></td>
+				<td><b><i>(Bonus)</i></b></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td colspan="2"><input type="submit" name="Submit" value="Submit" size="6" style="width: 35%"></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+	</form>
+
+</body>
+</html>
