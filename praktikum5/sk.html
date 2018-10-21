@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Studi Kasus</title>
+		<style type="text/css">
+			html * {
+				font-family: sans-serif;
+			}
+			body {
+				background: url("Capture.PNG");
+			}
+			#wrapper {
+				margin: auto;
+				width: 80%;
+				border: 1px solid #52772c;
+			}
+
+			#header {
+				height: 10%;
+				border: 0px;
+				padding: 10px;
+				background-color: #a7f259;
+				border-bottom: 10px solid #91d14f;
+				border-top: 10px solid #91d14f;
+				font-weight: 900;
+				color: #0f3691;
+				font-size: 28px;
+			}
+			#header img {
+				vertical-align: middle;
+				margin-right: 10px;
+			}
+			#header .inner-right {
+				display: block;
+				position: relative;
+				float: right;
+				text-align: right;
+				font-size: 14px;
+				font-weight: normal;
+				color: #000;
+			}
+			.inner-right a {
+				text-decoration: none;
+				color: #000;
+			}
+			.space1 {
+				clear: both;
+				width: 100%;
+				display: block;
+				padding: 3px 0;
+			}
+
+			#inner {
+				float: left;
+				width: 100%;
+				border: 0px;
+				background-color: white;
+
+			}
+
+			#sidebar {
+				float: left;
+				width: 20%;
+				height: 500px;
+				overflow: hidden;
+				background-color: #b2f76a;
+				position: relative;
+			}
+			#sidebar a {
+				text-decoration: none;
+				padding: 10px;
+				font-size: 14px;
+				display: block;
+				color: #000;
+				background-color: #60c44e;
+				margin-bottom: 1px;
+			}
+
+			#content {
+				float: left;
+				width: 80%;
+				height: 50%;
+				margin: 0 auto;
+			}
+			#content a img {
+				text-decoration: none;
+				color: #000;
+				display: inline-block;
+			}
+			#content .content-right {
+				width: 35%;
+				position: relative;
+				float: right;
+				border: 1px solid #52772c;
+				border-right: 0px;
+				background-color: #b2f76a;
+				padding: 10px;
+			}
+			#content .inner-content {
+				position: absolute;
+				width: 35%;
+				margin: 0 auto;
+				padding: 5px;
+			}
+			.inner-content #more {
+				display: none;
+			}
+			.inner-content h3, h5 {
+				margin: 0px;
+			}
+
+			#footer {
+				clear: both;
+				height: 5%;
+				text-align: center;
+				padding: 10px;
+				border-bottom: 10px solid #91d14f;
+				background-color: #a7f259;
+			}
+		</style>
+		<script type="text/javascript">
+			function myFunction(){
+				var dots = document.getElementById("dot");
+				var moreText = document.getElementById("more");
+				var btnText = document.getElementById("myBtn");
+
+				if (dot.style.display === "none") {
+					dot.style.display = "inline";
+					btnText.innerHTML = "Read more";
+					moreText.style.display = "none";
+				}
+				else {
+					dot.style.display = "none";
+					btnText.innerHTML = "Read less";
+					moreText.style.display = "inline";	
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="header">
+				<img src="../praktikum4/um.png" width="100px">
+				<caption>TEKNIK ELEKTRO</caption>
+				<div class="inner-right">
+					<a href="#">Home</a> | 
+					<a href="#">Sitemap</a> | 
+					<a href="#">RSS</a> | 
+					<a href="#">Contact</a> | 
+					<a href="#">About Us</a>
+					<div class="space1"></div>
+					<div style="margin-top: 50px;">
+						<label>Search : </label>
+						<input type="text" name="search" size="20px">
+					</div>
+				</div>
+			</div>
+			<div id="inner">
+				<div id="sidebar">
+					<a href="#">Home</a>
+					<a href="#">News &amp; Media</a>
+					<a href="#">Tutorials</a>
+					<a href="#">Tips &amp; Tricks</a>
+					<a href="#">Downloads</a>
+				</div>
+				<div id="content">
+					<a href="#"><img src="img/bemft.jpg" width="19%"></a>
+					<a href="#"><img src="img/mesin.jpg" width="19%"></a>
+					<a href="#"><img src="img/elektro.jpg" width="19%"></a>
+					<a href="#"><img src="img/sipil.jpg" width="19%"></a>
+					<a href="#"><img src="img/industri.jpg" width="19%"></a>
+					<div class="inner-content">
+						<h3>Explore Malang</h3>
+						<h5>27 September 2018</h5>
+						<img src="img/snw.png" width="20%" style="float: left; border: 1px solid black; padding: 5px; margin: 10px;">
+						<p style="line-height: 1.5;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis sagittis risus a consequat. Nam consectetur dapibus nunc, et mattis enim pharetra a. Praesent finibus neque sed elit vehicula, ut pulvinar risus dignissim. Quisque pharetra odio eu libero rhoncus tempor. Nam congue, nunc eu<span id="dot">...</span><span id="more"> scelerisque gravida</span></p>
+						<a onclick="myFunction()" id="myBtn">Read More...</a>
+					</div>
+					<div class="content-right">
+						<b>News</b>
+						<ul>
+							<li>Tren Desain Web</li>
+							<li>Tips SEO Friendly</li>
+							<li>Boost Your Web Speed</li>
+						</ul>
+					</div>
+					<div class="space1"></div>
+					<div class="content-right">
+						<b>Events</b>
+						<ul>
+							<li>Lomba Panjat Tiang Listrik</li>
+							<li>Lomba Tarik Kabel</li>
+							<li>Balap Karung 10KM</li>
+						</ul>
+					</div>
+					
+				</div>
+			</div>	
+			<div id="footer">
+				<caption>&copy; 2018 Teknik Elektro. UM Malang. Indonesia</caption>
+			</div>
+		</div>
+	</body>
+</html>
